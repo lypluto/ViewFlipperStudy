@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context="com.lltest.viewflipperstudy.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_upper1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:showDividers="middle"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Tests" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideOverlay"
+            style="@android:style/Widget.DeviceDefault.ScrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="0dp"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:showDividers="middle" >
+
+                <Button
+                    android:id="@+id/btn_show_view_flipper_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ViewFlipper Page"
+                    android:textStyle="bold"
+                    android:focusable="true"
+                    android:clickable="true" />
+
+                <Button
+                    android:id="@+id/btn_tbd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TBD"
+                    android:textStyle="bold"
+                    android:focusable="true"
+                    android:clickable="true" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

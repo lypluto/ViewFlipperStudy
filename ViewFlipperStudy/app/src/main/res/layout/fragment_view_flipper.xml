@@ -1,0 +1,320 @@
+<LinearLayout android:id="@+id/login_fragment_page"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="16dp"
+    tools:context="com.lltest.viewflipperstudy.ui.ViewFlipperFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <!-- ViewSwitcher with three views -->
+    <ViewFlipper
+        android:id="@+id/simpleViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Username page -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:text="username"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <!-- set pw page -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:text="Please set your password"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <!-- confirm pw page -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:text="Please confirm your password"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <!-- Gender page -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/setup_profile_gender_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/setup_profile_radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    android:checked="true"
+                    android:text="Male" />
+                <RadioButton android:id="@+id/setup_profile_radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    android:text="Female" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- phone num page -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:text="Please enter your phone number"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <!-- email page -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:text="Please enter your email"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <!-- Avatar page -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/avatar_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:clickable="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Click image to upload your own avatar" />
+
+        </LinearLayout>
+
+
+
+        <!-- country page -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:text="Please enter your country"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:text="Please enter your city"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+
+    <LinearLayout
+        android:id="@+id/layout_btn_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_row_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_prev"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Prev"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Next"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_skip"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Skip"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_row_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Done"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
